@@ -1,0 +1,19 @@
+@font-face
+{
+font-family: wlight
+src: url(http://grassymoss.github.io/fonts/weblysleekuil.ttf)
+}
+
+@font-face
+{
+font-family: wsemi
+src: url(/fonts/weblysleekuisl.ttf)
+}
+
+body {
+text-align: center
+}
+
+h1 {
+font-family: wlight
+}

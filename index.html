@@ -7,41 +7,136 @@
 </head>
 
 <body>
+<style>
+#forkongithub a{
+background: #696969;
+color: #fff;
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+font-weight: bold;
+padding:5px 40px;
+font-size: 1rem;
+line-height: 2rem;
+position: relative;
+transition: 0.7s;}
+
+#forkongithub a:hover{
+background:#00FFFF;
+color:#fff;}
+
+#forkongithub a::before,#forkongithub a::after{
+content:"";
+width:100%;
+display:block;
+position:absolute;
+top:1px;
+left:0;
+height:1px;
+background:#fff;}
+
+#forkongithub a::after{
+bottom:1px;
+top:auto;}
+
+@media screen and (min-width:800px){
+#forkongithub{
+position: absolute;
+display: block;
+top: 0;
+right: 0;
+width: 200px;
+overflow: hidden;
+height: 200px;}
+
+#forkongithub a{
+width: 200px;
+position: absolute;
+top: 60px;
+right: -60px;
+transform:rotate(45deg);
+-webkit-transform:rotate(45deg);
+box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}
+</style>
+	<!-- Custom GitHub ribbon, not dependent on GitHub servers and uses CSS instead. Responsive and adjusts based on screen width. -->
+	<span id="forkongithub"><a href="https://github.com/GrassyMoss">Fork me on GitHub</a></span>
+	
 
 <style>
-
 body {
 text-align: center;
 font-family: 'Open Sans', sans-serif;
-background: url(stardust.png);
-color: White;
-}
+background: url(background.png);}
 
 h1 {
-font-size: 24pt;
-}
+font-size: 40pt;}
+
+h2 {
+font-size: 26pt;}
 
 .main {
-font-size: 16pt;
-}
+font-size: 18pt;}
 
 #line {
-color: Black;
-}
+color: Black;}
 
 .footer {
 color: Black;
-font-size: 10pt;
+font-size: 10pt;}
+
+.nav {
+margin-top: 90px;
+list-style: none;
+text-align: left;
+border-right: 1px dashed #444;
+width: 150px;
+position: fixed;}
+
+.link {
+-webkit-transition; all 0.8s;
+margin-left: 0px;
+color: #444;
+text-decoration: none;
+font-size: 16pt;}
+
+<!-- Add "margin-left: 10px;" to make it move to the left when hovered. -->
+.link:hover {
 }
 
-</style>
+#home:hover {
+color: skyblue;}
 
-	<h1>Welcome.</h1>
-	<p id="line">-----</p>
-	<p class="main" id="status">There's nothing here right now.</p>
-	<p class="main" id="about">This is mostly used for other applications to pull data from, but we'll let you know if there is something you need to see.</p>
+#hub:hover {
+color: cornflowerblue;}
+
+.spacer {
+height: 12px;}
+
+</style>
+	
+	<span class="text">
+	<h1>GrassyMoss @ GitHub</h1>
 	<hr></hr>
+	</span>
+	
+	<!-- Minimalist menu bar -->
+	<!-- Corbel is also a good font choice -->
+	<ul class="nav">
+		<li><a href="http://grassymoss.github.io/" class="link" id="home">Home</a></li>
+		<div class="spacer"></div>
+		<li><a href="https://github.com/GrassyMoss" class="link" id="hub">GitHub</a></li>
+		<li>__</li>
+	</ul>
+	
+	<span class="text">
+	<h2>Welcome.</h2>
+	<p class="line">_____</p>
+	<p class="main" id="status">There's nothing here right now.</p>
+	<p class="main" id="about">This website mostly used for other applications to pull data from, but we'll let you know if there is something you need to see.</p>
+	<p class="line">_____</p>
+	<p class="footer" id="email">Contact: <a href="mailto:GrassyMoss@live.com">GrassyMoss @ live.com</a></p>
 	<p class="footer">&copy; 2014 GrassyMoss</p>
+	</span>
 	
 </body>
 

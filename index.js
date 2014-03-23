@@ -58,11 +58,20 @@ transform:rotate(45deg);
 -webkit-transform:rotate(45deg);
 box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}
 </style>
-	<!-- Custom GitHub ribbon, not dependent on GitHub servers and uses CSS instead. Responsive and adjusts based on screen width. -->
+	<!-- 	
+	Custom GitHub ribbon, not dependent on GitHub servers and uses CSS instead. 
+	Responsive and adjusts based on screen width.
+	-->
 	<span id="forkongithub"><a href="https://github.com/GrassyMoss">Fork me on GitHub</a></span>
 	
 
 <style>
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+src: local('Open Sans'), local('OpenSans') format('woff');}
+
 body {
 text-align: center;
 font-family: 'Open Sans', sans-serif;
@@ -101,7 +110,7 @@ font-size: 16pt;}
 
 <!-- Add "margin-left: 10px;" to make it move to the right when hovered. -->
 .link:hover {
-}
+margin-left: 5px;}
 
 #home:hover {
 color: skyblue;}
@@ -115,12 +124,12 @@ height: 12px;}
 </style>
 	
 	<span class="text">
-	<h1>GrassyMoss @ GitHub</h1>
-	<hr></hr>
+		<h1>GrassyMoss @ GitHub</h1>
+		<hr />
 	</span>
 	
-	<!-- Minimalist menu bar -->
-	<!-- Corbel is also a good font choice -->
+	<!-- Minimalist navigation bar that is there regardless of the user's page position -->
+	<!-- Corbel is also a good font choice. -->
 	<ul class="nav">
 		<li><a href="http://grassymoss.github.io/" class="link" id="home">Home</a></li>
 		<div class="spacer"></div>
@@ -129,13 +138,25 @@ height: 12px;}
 	</ul>
 	
 	<span class="text">
-	<h2>Welcome.</h2>
-	<p class="line">_____</p>
-	<p class="main" id="status">There's nothing here right now.</p>
-	<p class="main" id="about">This website mostly used for other applications to pull data from, but we'll let you know if there is something you need to see.</p>
-	<p class="line">_____</p>
-	<p class="footer" id="email">Contact: <a href="mailto:GrassyMoss@live.com">GrassyMoss @ live.com</a></p>
-	<p class="footer">&copy; 2014 GrassyMoss</p>
+		<h2>Welcome.</h2>
+		<p class="line">_____</p>
+		<p class="main" id="status">There's nothing here right now.</p>
+		<p class="main" id="about">This website mostly used for other applications to pull data from, but we'll let you know if there is something you need to see.</p>
+		<p class="line">_____</p>
+		
+		<script>
+		
+			/* 
+			No scripts yet
+			*/
+			
+		</script>
+	
+	<footer>
+		<p class="footer" id="email">Contact: <a href="mailto:GrassyMoss@live.com">GrassyMoss @ live.com</a></p>
+		<p class="footer">&copy; 2014 GrassyMoss</p>
+	</footer>
+
 	</span>
 	
 </body>

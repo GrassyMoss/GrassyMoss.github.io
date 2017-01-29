@@ -106,16 +106,23 @@ margin-left: 0px;
 color: #444;
 text-decoration: none;
 font-size: 16pt;}
+	
+.loginform {
+font-size: 13pt;
+	}
 
 <!-- Add "margin-left: 10px;" to make it move to the right when hovered. -->
 .link:hover {
 margin-left: 5px;}
 
 #home:hover {
-color: skyblue;}
+	color: skyblue;}
 
 #hub:hover {
-color: cornflowerblue;}
+	color: cornflowerblue;}
+	
+#apes:hover {
+	color: forestgreen;}
 
 .spacer {
 height: 12px;}
@@ -130,11 +137,11 @@ height: 12px;}
 	<!-- Minimalist navigation bar that is there regardless of the user's page position -->
 	<!-- Corbel is also a good font choice. -->
 	<ul class="nav">
-		<li><a href="http://grassymoss.github.io/" class="link" id="home">Home</a></li>
+		<li><a href="http://manua.tech/" class="link" id="home">Home</a></li>
 		<div class="spacer"></div>
 		<li><a href="https://github.com/GrassyMoss" class="link" id="hub">GitHub</a></li>
 		<div class="spacer"></div>
-		<li><a href="http://grassymoss.github.io/apes.html" class="link" id="apes">APES</a></li>
+		<li><a href="http://manua.tech/apes.html" class="link" id="apes">APES</a></li>
 		<li>__</li>
 	</ul>
 	
@@ -146,11 +153,11 @@ height: 12px;}
 		<p class="line">_____</p>
 		
 	<!-- Login test 8/31 SciOly -->
-	<section class="loginform cf">
-	<form name="login" action="http://www.dnscioly.com" method="get" accept-charset="utf-8">
+	<section class="loginform">
+	<form name="login" action="http://manua.tech/walled.html" method="get" accept-charset="utf-8">
   	<ul style="list-style: none;">
     	<li><label for="usermail">Email</label>
-    	<input type="email" name="usermail" placeholder="me@email.com" required></li>
+    	<input type="email" name="usermail" placeholder="you@email.com" required></li>
     	<li><label for="password">Password</label>
     	<input type="password" name="password" placeholder="6-12 Characters" required></li>
     	<li>
